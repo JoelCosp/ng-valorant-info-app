@@ -31,32 +31,7 @@
         <p class="my-[40px] text-base/8 text-center">¿What are you waiting for? Dive into a world of Agents, maps, and adrenaline-pumping action. Valorant isn’t just a game, it’s your next obsession.</p> 
         
         <div class="grid grid-cols-3 gap-30">
-            <div>
-                <div class="h-[500px] max-h-[500px] overflow-hidden">
-                    <img class="object-cover h-full" src="/assets/img/agents.webp" alt="Logo">
-                </div>
-                <div class="bg-white py-5 border-t-10 border-[#FF4654]">
-                    <h3 class="ml-5 font-semibold text-[#1A1A1A]">SECTION</h3>
-                </div>
-            </div>
-
-            <div>
-                <div class="h-[500px] max-h-[500px] overflow-hidden">
-                    <img class="object-cover h-full" src="/assets/img/agents.webp" alt="Logo">
-                </div>
-                <div class="bg-white py-5 border-t-10 border-[#FF4654]">
-                    <h3 class="ml-5 font-semibold text-[#1A1A1A]">SECTION</h3>
-                </div>
-            </div>
-
-            <div>
-                <div class="h-[500px] max-h-[500px] overflow-hidden">
-                    <img class="object-cover h-full" src="/assets/img/agents.webp" alt="Logo">
-                </div>
-                <div class="bg-white py-5 border-t-10 border-[#FF4654]">
-                    <h3 class="ml-5 font-semibold text-[#1A1A1A]">SECTION</h3>
-                </div>
-            </div>
+            <app-home-cards *ngFor="let section of mainSections" [sectionName]="section"></app-home-cards>
         </div>
     </div>
 </section>
