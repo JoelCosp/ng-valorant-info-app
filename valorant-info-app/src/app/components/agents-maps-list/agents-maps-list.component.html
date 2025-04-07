@@ -1,0 +1,10 @@
+<section>
+    <div class="max-w-[1440px] mx-auto mt-30">
+        <h2 class="mt-10 text-3xl font-semibold">{{ sectionTitle }}</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-4">
+            <div *ngFor="let agent of data">
+                <p>{{ agent.displayName }}</p>
+            </div>
+        </div>
+    </div>
+</section>
