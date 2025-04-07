@@ -15,7 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavComponent, FooterComponent, HomeComponent, AgentsComponent, MapsComponent, WeaponsComponent, AboutComponent, NewsComponent],
+  imports: [RouterOutlet, FooterComponent, HomeComponent, AgentsComponent, MapsComponent, WeaponsComponent, AboutComponent, NewsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

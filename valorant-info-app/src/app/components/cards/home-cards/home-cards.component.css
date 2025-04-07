@@ -1,0 +1,4 @@
+.home-card-container:hover div .home-card-img {
+    transform: scale(1.3);
+    transition: all 0.2s ease-out;
+}
