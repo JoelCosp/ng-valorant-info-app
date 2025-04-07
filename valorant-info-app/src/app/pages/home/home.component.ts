@@ -10,21 +10,24 @@ import { HomeCardsComponent } from '../../components/cards/home-cards/home-cards
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  mainSections!: { name: string; img: string }[];
+  mainSections!: { name: string; img: string, urlRoute: string }[];
 
   constructor() {
     this.mainSections = [
       {
         name: "MAPS",
-        img: "/assets/img/maps.webp"
+        img: "/assets/img/maps.webp",
+        urlRoute: "/maps"
       },
       {
         name: "AGENTS",
-        img: "/assets/img/agents.webp"
+        img: "/assets/img/agents.webp",
+        urlRoute: "/agents"
       },
       {
         name: "WEAPONS",
-        img: "/assets/img/weapons.jpg"
+        img: "/assets/img/weapons.jpg",
+        urlRoute: "/weapons"
       }
     ]
   }
