@@ -10,13 +10,22 @@ import { HomeCardsComponent } from '../../components/cards/home-cards/home-cards
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  mainSections!: string[];
+  mainSections!: { name: string; img: string }[];
 
   constructor() {
     this.mainSections = [
-      "MAPS",
-      "AGENTS",
-      "WEAPONS"
+      {
+        name: "MAPS",
+        img: "/assets/img/maps.webp"
+      },
+      {
+        name: "AGENTS",
+        img: "/assets/img/agents.webp"
+      },
+      {
+        name: "WEAPONS",
+        img: "/assets/img/weapons.jpg"
+      }
     ]
   }
 }

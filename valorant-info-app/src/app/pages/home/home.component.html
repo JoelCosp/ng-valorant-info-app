@@ -13,25 +13,26 @@
 </section>
 
 <section>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-25">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-25 text-center mx-5 my-5 sm:my-0 sm:mx-0 sm:text-left">
         <div class="max-w-[720px] flex flex-col justify-center  ml-auto">
-            <h2 class="lg:text-6xl font-semibold text-[#1A1A1A]">¿WHAT IS VALORANT?</h2>
+            <h2 class="text-3xl lg:text-6xl font-semibold text-[#1A1A1A]">¿WHAT IS VALORANT?</h2>
             <p class="my-[40px] text-base/8">VALORANT is more than just a shooter — it’s where precision meets strategy. Developed by Riot Games, this explosive first-person tactical shooter blends sharp gunplay with unique agent abilities from around the globe. Got what it takes to plant the spike and clutch the round? In VALORANT, every decision matters, every shot counts, and every play has the power to make history. Get ready to compete at the highest level!</p> 
             <app-red-button [btnStyle]="true" text="DISCOVER"></app-red-button>
+            <img class="flex sm:hidden mt-[40px]" src="https://assets.rockpapershotgun.com/images/2020/06/Valorant-PC-performance-max-settings.png" alt="">
         </div>
-        <div class="h-screen overflow-hidden">
-            <img class="h-screen object-cover" src="https://assets.rockpapershotgun.com/images/2020/06/Valorant-PC-performance-max-settings.png" alt="">
+        <div class="hidden sm:flex sm:h-screen sm:overflow-hidden">
+            <img class="sm:h-screen sm:object-cover" src="https://assets.rockpapershotgun.com/images/2020/06/Valorant-PC-performance-max-settings.png" alt="">
         </div>
     </div>
 </section>
 
-<section class="bg-[#ECE7E1] h-screen">
-    <div class="max-w-[1440px] mx-auto py-[50px]">
-        <h2 class="text-center lg:text-6xl font-semibold text-[#1A1A1A]">¡READY OR NOT... THE FIGHT BEGINS!</h2>  
+<section class="bg-[#ECE7E1]">
+    <div class="max-w-[1440px] mx-auto py-5 px-5 sm:py-[80px] sm:px-0">
+        <h2 class="text-3xl lg:text-6xl font-semibold text-[#1A1A1A] text-center">¡READY OR NOT... THE FIGHT BEGINS!</h2>  
         <p class="my-[40px] text-base/8 text-center">¿What are you waiting for? Dive into a world of Agents, maps, and adrenaline-pumping action. Valorant isn’t just a game, it’s your next obsession.</p> 
         
-        <div class="grid grid-cols-3 gap-30">
-            <app-home-cards *ngFor="let section of mainSections" [sectionName]="section"></app-home-cards>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-30">
+            <app-home-cards *ngFor="let section of mainSections" [sectionData]="section"></app-home-cards>
         </div>
     </div>
-</section>
+</section> 

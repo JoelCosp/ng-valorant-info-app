@@ -1,8 +1,8 @@
 <div class="hover:cursor-pointer home-card-container">
-    <div class="h-[500px] max-h-[500px] overflow-hidden">
-        <img class="object-cover h-full home-card-img" src="/assets/img/agents.webp" alt="Logo">
+    <div class="w-full overflow-hidden h-[50vh]">
+        <img class="object-cover w-full h-full home-card-img" [src]="sectionData.img" alt="Logo">
     </div>
     <div class="bg-white py-5 border-t-10 border-[#FF4654]">
-        <h3 class="ml-5 font-semibold text-[#1A1A1A]">{{ sectionName }}</h3>
+        <h3 class="ml-5 font-semibold text-[#1A1A1A]">{{ sectionData.name }}</h3>
     </div>
 </div>

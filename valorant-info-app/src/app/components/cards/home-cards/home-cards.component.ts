@@ -7,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './home-cards.component.css'
 })
 export class HomeCardsComponent {
-  @Input() sectionName!: string;
+  @Input() sectionData!: { name: string; img: string };
 }
