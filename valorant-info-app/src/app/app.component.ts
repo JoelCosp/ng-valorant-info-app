@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { initFlowbite } from 'flowbite';
 
 // Pages
 import { HomeComponent } from './pages/home/home.component';
@@ -19,6 +20,10 @@ import { FooterComponent } from './components/footer/footer.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'valorant-info-app';
+
+  ngOnInit(): void {
+    initFlowbite();
+  }
 }
