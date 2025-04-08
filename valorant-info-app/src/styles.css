@@ -11,6 +11,10 @@
     font-style: normal;
 }
 
+html {
+    background-color: #101C24;
+}
+
 h2 {
     font-family: 'Tungsten';
 }
