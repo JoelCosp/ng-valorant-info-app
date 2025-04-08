@@ -8,11 +8,13 @@ import { Agent } from '../../models/Agent';
 // Services
 import { AgentsServiceService } from '../../services/agents-service.service';
 
+import { AgentsCardsComponent } from '../cards/agents-cards/agents-cards.component';
+
 @Component({
   selector: 'app-agents-maps-list',
-  imports: [CommonModule],
+  imports: [CommonModule, AgentsCardsComponent],
   templateUrl: './agents-maps-list.component.html',
-  styleUrl: './agents-maps-list.component.css'
+  styleUrl: './agents-maps-list.component.css',
 })
 export class AgentsMapsListComponent implements OnInit{
 

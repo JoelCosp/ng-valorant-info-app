@@ -3,3 +3,15 @@
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('/assets/fonts/tungsten-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+h2 {
+    font-family: 'Tungsten';
+}
+  

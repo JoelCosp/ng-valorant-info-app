@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Agent } from '../../../models/Agent';
 
 @Component({
   selector: 'app-agents-cards',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './agents-cards.component.css'
 })
 export class AgentsCardsComponent {
-
+  @Input() agent!: Agent;
 }
