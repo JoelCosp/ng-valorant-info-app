@@ -13,17 +13,25 @@ import { Map } from '../../models/Map';
 export class MapsListComponent {
   @Input() sectionTitle!: string;
 
+  isLoading: boolean;
+
   mapResponse: any;
   maps!: Map[]; 
   constructor(private mapsService: MapsServiceService) {
     this.maps = [];
+    this.isLoading = false;
   }
 
   ngOnInit(): void {
+    this.isLoading = true;
     this.mapsService.getMaps().subscribe((response) => {
       this.mapResponse = response;
       this.maps = this.mapResponse.data;
       console.log(this.maps);
+      this.isLoading = false;
+    }, (error) => {
+      this.isLoading = false;
+      console.log('Error: ', error);
     });
   }
 }
