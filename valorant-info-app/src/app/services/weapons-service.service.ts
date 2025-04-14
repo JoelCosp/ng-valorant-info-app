@@ -10,7 +10,7 @@ export class WeaponsServiceService {
 
   constructor(private http: HttpClient) { }
 
-  getAgents(): Observable<WeaponSkin> {
-    return this.http.get<WeaponSkin>("https://valorant-api.com/v1/agents");
+  getWeapons(): Observable<any> {
+    return this.http.get<any>("https://valorant-api.com/v1/weapons");
   }
 }

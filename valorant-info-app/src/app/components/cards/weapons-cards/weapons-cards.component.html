@@ -1,1 +1,6 @@
-<p>weapons-cards works!</p>
+<article class="hover:cursor-pointer weapon-main-container bg-[#FFFFFF]">
+    <div class="w-full h-[240px] bg-[#484c54] flex justify-center items-center pent-img-container border-t-1 border-l-1 border-r-1 border-l-[#FFFFFF] border-t-[#FFFFFF] border-r-[#FFFFFF]">
+        <img class="object-contain max-h-full weapon-img" [src]="weapon.displayIcon" alt="Weapon's image" />
+      </div>
+    <h3 class="bg-white py-5 px-5 border-t-7 border-[#FF4654] font-semibold text-xl">{{ weapon.displayName }}</h3>
+</article>
