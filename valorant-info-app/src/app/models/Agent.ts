@@ -23,6 +23,7 @@ export interface AgentResponse {
     isBaseContent: boolean;
     role: Role | null;
     abilities: Ability[];
+    uuid: string;
   }
   
   export interface Role {

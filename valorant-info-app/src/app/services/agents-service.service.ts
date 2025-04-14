@@ -13,4 +13,8 @@ export class AgentsServiceService{
   getAgents(): Observable<AgentResponse> {
     return this.http.get<AgentResponse>("https://valorant-api.com/v1/agents");
   }
+
+  getAgentById(id: string): Observable<any> {
+    return this.http.get<any>("https://valorant-api.com/v1/agents/" + id);
+  }
 }

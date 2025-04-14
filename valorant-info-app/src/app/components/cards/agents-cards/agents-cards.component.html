@@ -1,4 +1,4 @@
-<article [routerLink]="['/agents', 1]" class="hover:cursor-pointer agent-main-container">
+<article [routerLink]="['/agents', agent.uuid]" class="hover:cursor-pointer agent-main-container">
     <div class="overflow-hidden max-h-[500px] bg-[linear-gradient(to_top,rgba(255,166,0,1)_0%,rgba(255,166,0,0)_70%)]">
         <img class="object-cover h-[600px] agent-img" [src]="agent.fullPortrait" alt="Agent's image">
     </div>
