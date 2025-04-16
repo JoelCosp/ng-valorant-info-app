@@ -41,10 +41,17 @@
   </section>
 
   <section>
-    <div class="grid grid-cols-1 sm:grid-cols-2 text-white">
-        <div>
-            <h2 class="text-8xl font-semibold">SPECIAL HABILITIES</h2>            
-        </div>
+    <div class="text-white">
+        <h2 class="text-8xl font-semibold">SPECIAL HABILITIES</h2>
+        <mat-tab-group>
+            <mat-tab *ngFor="let ability of agentDetails?.abilities; let i = index">
+                <ng-template mat-tab-label>
+                    <img [src]="agentDetails?.abilities[i].displayIcon" [alt]="agentDetails?.abilities[i].displayIcon" width="50" height="50">
+                </ng-template>
+                <p>{{ agentDetails?.abilities[i].description }}</p>
+            </mat-tab>
+        </mat-tab-group>
+                     
     </div>
   </section>
   
