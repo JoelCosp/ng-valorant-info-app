@@ -19,3 +19,16 @@ h2 {
     font-family: 'Tungsten';
 }
   
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-mdc-tab-label-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mat-mdc-tab-body-wrapper p{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
