@@ -6,11 +6,10 @@
 
 @font-face {
     font-family: 'Tungsten';
-    src: url('/assets/fonts/tungsten-bold.ttf') format('truetype');
+    src: url('assets/fonts/tungsten-bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
-}
-
+  }
 html {
     background-color: #101C24;
 }
